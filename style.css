@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Fjalla+One&family=Inter:wght@900&family=Roboto+Condensed:wght@300;400&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Fjalla+One&family=Inter:wght@900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Condensed:wght@300;400&family=Secular+One&display=swap');
+
+* {
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(90deg, #0c164d 0%, #190b22 100%);
+}
+
+
+.heading_wrapper {
+    text-align: right;
+    padding: 50px 50px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+  font-family: Secular One;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0.09em;
+  color: white;
+}
+
+h2 {
+  font-family: Lora;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.6em;
+  color: #ffd029;
+}
+
+aside {
+  display: flex;
+  float: left;
+  margin-left: -650px;
+}
+
+content {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.sun {
+  height: 740.12px;
+  width: 740.12px;
+  background-color: #ffd029;
+  border-radius: 50%;
+}
+
+.mercury {
+  height: 14px;
+  width: 14px;
+  background-color: #888888;
+  border-radius: 50%;
+}
+
+.venus {
+  height: 26px;
+  width: 26px;
+  background-color: #e7cdcd;
+  border-radius: 50%;
+}
+
+.earth {
+  height: 28px;
+  width: 28px;
+  background-color: #428ed4;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mars {
+  height: 14px;
+  width: 14px;
+  background-color: #ef5f5f;
+  border-radius: 50%;
+}
+
+.jupiter {
+  height: 188px;
+  width: 188px;
+  background-color: #e29468;
+  border-radius: 50%;
+}
+
+.saturn {
+  height: 144px;
+  width: 144px;
+  background-color: #c7aa72;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.saturn_disc {
+  height: 5.5px;
+  width: 218.23px;
+  opacity: 50%;
+  rotate: 150deg;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.uranus {
+  height: 66px;
+  width: 66px;
+  background-color: #c9d4f1;
+  border-radius: 50%;
+}
+
+.neptune {
+  width: 66px;
+  height: 66px;
+  background-color: #7a91a7;
+  border-radius: 50%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clear: both;
+    margin-bottom: 50px;
+}
