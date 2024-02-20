@@ -1,7 +1,7 @@
-import { fetchBaseURL } from "./module/api.js";
-fetchBaseURL();
+//import { fetchBaseURL } from "./module/api.js";
+//fetchBaseURL();
 
-/*const baseURL = 'https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies';
+const baseURL = 'https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies';
 
 let bodies;
 
@@ -17,13 +17,32 @@ async function fetchBaseURL() {
         });
         let data = await response.json();
         bodies = data;
-        console.log(bodies);
+        bodies = bodies.bodies;
+
+        document.getElementById("earth_heading").innerHTML = bodies[3].name;
+        document.getElementById("earth_latin").innerHTML = bodies[3].latinName;
+        document.getElementById("earth_description").innerHTML = bodies[3].desc;
+        document.getElementById("earth_circumference").innerHTML = bodies[3].circumference;
+        document.getElementById("earth_temp_day").innerHTML = bodies[3].temp.day;
+        document.getElementById("earth_distance").innerHTML = bodies[3].distance;
+        document.getElementById("earth_temp_night").innerHTML = bodies[3].temp.night;
+        document.getElementById("earth_moons").innerHTML = bodies[3].moons;
+
+        /*console.log(bodies);
+        console.log(bodies[0].name);
+        console.log(bodies[0].latinName);
+        console.log(bodies[0].desc);
+        console.log(bodies[0].circumference);
+        console.log(bodies[0].distance);
+        console.log(bodies[0].temp.day);
+        console.log(bodies[0].temp.night);
+        console.log(bodies[0].moons);*/
 
     } catch (error) {
         console.error("Error: ", error);
     }
 }
-fetchBaseURL();*/
+fetchBaseURL();
 
 // Change Pages funkar!!
 document.addEventListener("DOMContentLoaded", function () {
@@ -36,24 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
 function earthPage() {
     window.location.href = "/earth.html";
 }
-
-
-/*
-const displayEarth = async () => {
-    const payload = await fetchBaseURL();
-
-    let dataName = payload.map((bodies) => {
-        const { name } = bodies;
-
-        return `
-        <h1>${bodies[0].name}</h1>
-        `
-    }) 
-    display.innerHTML = dataName;
-}
-displayEarth();*/
-
-
 
 
 
@@ -111,9 +112,3 @@ function neptunePage() {
 
 
 
-// bodies[0].name
-// bodies[0].latinName
-// bodies[0].desc
-// bodies[0].circumference   bodies[0].distance
-// bodies[0].temp.day   bodies[0].temp.night
-// bodies[0].moons
