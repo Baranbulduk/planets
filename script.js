@@ -24,10 +24,10 @@ async function fetchBaseURL() {
         document.getElementById("earth_latin").innerHTML = bodies[3].latinName;
         document.getElementById("earth_latin").innerHTML = bodies[3].latinName;
         document.getElementById("earth_description").innerHTML = bodies[3].desc;
-        document.getElementById("earth_circumference").innerHTML = bodies[3].circumference;
-        document.getElementById("earth_temp_day").innerHTML = bodies[3].temp.day;
-        document.getElementById("earth_distance").innerHTML = bodies[3].distance;
-        document.getElementById("earth_temp_night").innerHTML = bodies[3].temp.night;
+        document.getElementById("earth_circumference").innerHTML = bodies[3].circumference.toLocaleString() + " km";
+        document.getElementById("earth_temp_day").innerHTML = bodies[3].temp.day + "C";
+        document.getElementById("earth_distance").innerHTML = bodies[3].distance.toLocaleString() + " km";
+        document.getElementById("earth_temp_night").innerHTML = bodies[3].temp.night + "C";
         document.getElementById("earth_moons").innerHTML = bodies[3].moons;
         }
         displayEarth();
