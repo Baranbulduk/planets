@@ -19,7 +19,9 @@ async function fetchBaseURL() {
         bodies = data;
         bodies = bodies.bodies;
 
+        function displayEarth() {
         document.getElementById("earth_heading").innerHTML = bodies[3].name;
+        document.getElementById("earth_latin").innerHTML = bodies[3].latinName;
         document.getElementById("earth_latin").innerHTML = bodies[3].latinName;
         document.getElementById("earth_description").innerHTML = bodies[3].desc;
         document.getElementById("earth_circumference").innerHTML = bodies[3].circumference;
@@ -27,8 +29,11 @@ async function fetchBaseURL() {
         document.getElementById("earth_distance").innerHTML = bodies[3].distance;
         document.getElementById("earth_temp_night").innerHTML = bodies[3].temp.night;
         document.getElementById("earth_moons").innerHTML = bodies[3].moons;
+        }
+        displayEarth();
 
-        /*console.log(bodies);
+        /*
+        console.log(bodies);
         console.log(bodies[0].name);
         console.log(bodies[0].latinName);
         console.log(bodies[0].desc);
@@ -52,10 +57,31 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+// Earth page
 function earthPage() {
     window.location.href = "/earth.html";
 }
 
+
+// Sökruta 
+const searchBox = document.getElementById("search-box");
+const searchForm = document.getElementById("search-form");
+searchForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    searchPlanets();
+});
+
+function searchPlanets() {
+    search = searchBox.value;
+    if (search == bodies[3].name) {
+        earthPage(search);
+    } if (search) {
+
+    } else {
+
+    }
+
+}
 
 
 
@@ -106,9 +132,6 @@ function neptunePage() {
 }*/
 
 
-
-
-//document.getElementById("earth_heading").innerHTML = "hej";
 
 
 
