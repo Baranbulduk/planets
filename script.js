@@ -20,15 +20,14 @@ async function fetchBaseURL() {
         bodies = bodies.bodies;
 
         function displayEarth() {
-        document.getElementById("earth_heading").innerHTML = bodies[3].name;
-        document.getElementById("earth_latin").innerHTML = bodies[3].latinName;
-        document.getElementById("earth_latin").innerHTML = bodies[3].latinName;
-        document.getElementById("earth_description").innerHTML = bodies[3].desc;
-        document.getElementById("earth_circumference").innerHTML = bodies[3].circumference.toLocaleString() + " km";
-        document.getElementById("earth_temp_day").innerHTML = bodies[3].temp.day + "C";
-        document.getElementById("earth_distance").innerHTML = bodies[3].distance.toLocaleString() + " km";
-        document.getElementById("earth_temp_night").innerHTML = bodies[3].temp.night + "C";
-        document.getElementById("earth_moons").innerHTML = bodies[3].moons;
+            document.getElementById("earth_heading").innerHTML = bodies[3].name;
+            document.getElementById("earth_latin").innerHTML = bodies[3].latinName;
+            document.getElementById("earth_description").innerHTML = bodies[3].desc;
+            document.getElementById("earth_circumference").innerHTML = bodies[3].circumference.toLocaleString() + " km";
+            document.getElementById("earth_distance").innerHTML = bodies[3].distance.toLocaleString() + " km";
+            document.getElementById("earth_temp_day").innerHTML = bodies[3].temp.day + "C";
+            document.getElementById("earth_temp_night").innerHTML = bodies[3].temp.night + "C";
+            document.getElementById("earth_moons").innerHTML = bodies[3].moons;
         }
         displayEarth();
 
@@ -64,17 +63,20 @@ function earthPage() {
 
 
 // Sökruta 
-const searchBox = document.getElementById("search-box");
 const searchForm = document.getElementById("search-form");
+const searchBox = document.getElementById("search-box");
 searchForm.addEventListener("submit", (event) => {
     event.preventDefault();
     searchPlanets();
 });
 
+
+
+
 function searchPlanets() {
     search = searchBox.value;
     if (search == bodies[3].name) {
-        earthPage(search);
+        earthPage();
     } if (search) {
 
     } else {

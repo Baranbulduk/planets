@@ -79,7 +79,7 @@ content {
   width: 740.12px;
   background-color: #ffd029;
   border-radius: 50%;
-  box-shadow: 0px 0px 250px 0px #FFD02933;
+  box-shadow: 0px 0px 250px 0px #ffd02933;
 }
 
 .mercury {
@@ -159,8 +159,6 @@ footer {
   margin-bottom: 50px;
 }
 
-
-
 /* EARTH PAGE*/
 .stars {
   width: 90%;
@@ -170,9 +168,9 @@ footer {
 .planetEarth {
   height: 740.12px;
   width: 740.12px;
-  background-color: #428ED4;
+  background-color: #428ed4;
   border-radius: 50%;
-  box-shadow: 0px 0px 250px 0px #FFD02933;
+  box-shadow: 0px 0px 250px 0px #ffd02933;
 }
 
 .main-container {
@@ -193,7 +191,7 @@ footer {
 .planet-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 200px; 
+  height: 200px;
   padding: 40px 0;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
