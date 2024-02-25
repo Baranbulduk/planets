@@ -70,19 +70,13 @@ searchForm.addEventListener("submit", (event) => {
     searchPlanets();
 });
 
-
-
-
 function searchPlanets() {
     search = searchBox.value;
-    if (search == bodies[3].name) {
+    if (search == "Jorden" || search == "jorden") {
         earthPage();
     } if (search) {
-
     } else {
-
     }
-
 }
 
 
