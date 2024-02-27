@@ -97,6 +97,8 @@ content {
   width: 26px;
   background-color: #e7cdcd;
   border-radius: 50%;
+  
+  
 }
 
 .earth {
@@ -104,7 +106,6 @@ content {
   width: 28px;
   background-color: #428ed4;
   border-radius: 50%;
-  cursor: pointer;
 }
 
 .mars {
@@ -162,13 +163,13 @@ footer {
   margin-bottom: 50px;
 }
 
-/* EARTH PAGE*/
+/* PLANET PAGE*/
 .stars {
   width: 90%;
   position: absolute;
 }
 
-.planetEarth {
+.planet {
   height: 740.12px;
   width: 740.12px;
   background-color: #428ed4;
@@ -199,6 +200,20 @@ footer {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   margin-bottom: 40px;
+}
+
+.planet-content_extra {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100px;
+
+}
+.planet_orbit_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: flex-start;
+  justify-self: first baseline;
 }
 
 h6 {
