@@ -25,11 +25,12 @@ header {
 .search-form {
   display: flex;
   align-items: center;
-  margin-left: -30px;
+  margin-left: -35px;
+  margin-top: 20px;
 }
 
 .search-box {
-  padding: 15px 80px 15px 15px;
+  padding: 25px 150px 25px 25px;
   border-radius: 5px 0px 0px 5px;
   background-color: #0e1953;
   color: white;
@@ -38,7 +39,7 @@ header {
 
 .search-button {
   background-color: #ffd029;
-  padding: 13px 30px;
+  padding: 22px 30px;
   border-radius: 0px 5px 5px 0px;
   border: none;
   font-size: 18px;
@@ -97,8 +98,6 @@ content {
   width: 26px;
   background-color: #e7cdcd;
   border-radius: 50%;
-  
-  
 }
 
 .earth {
@@ -206,7 +205,6 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 100px;
-
 }
 .planet_orbit_info {
   display: flex;

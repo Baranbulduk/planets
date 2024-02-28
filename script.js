@@ -1,8 +1,9 @@
-import { fetchBaseURL, displayPlanetInfo, searchPlanets } from "./module/api.js";
+import { fetchBaseURL, displayPlanetInfo, searchPlanets, changeBackgroundColor } from "./module/api.js";
 
 fetchBaseURL();
 displayPlanetInfo();
 searchPlanets();
+changeBackgroundColor();
 
 /*
 // Change Pages funkar!!
