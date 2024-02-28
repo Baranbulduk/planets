@@ -5,6 +5,8 @@ displayPlanetInfo();
 searchPlanets();
 changeBackgroundColor();
 
+
+
 /*
 // Change Pages funkar!!
 document.addEventListener("DOMContentLoaded", function () {

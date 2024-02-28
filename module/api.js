@@ -1,7 +1,36 @@
-const baseURL =
-    "https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies";
+const baseURL = "https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies";
+
+// const baseURL = "https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/keys";
 
 let bodies;
+
+// Post method Exempel
+/*
+async function fetchData() {
+    try {
+        const response = await fetch('https://api.example.com/data', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${API_KEY}` // Din API-nyckel ska ersätta API_KEY
+            },
+            body: JSON.stringify({
+                // Här kan du lägga till data du vill skicka till servern
+            })
+        });
+
+        console.log(response.status); // Lägg till denna rad
+
+        const data = await response.json();
+        console.log(data);
+        } catch (error) {
+        console.error('Error:', error);
+    }
+}
+
+fetchData();
+*/
+
 
 // fetch API
 async function fetchBaseURL(planetName) {
@@ -79,12 +108,6 @@ function searchPlanets() {
 let urlParams = new URLSearchParams(window.location.search);
 let planetName = urlParams.get("name");
 
-if (planetName) {
-    fetchBaseURL(planetName);
-} else {
-    console.log("Inget planetnamn angivet!");
-}
-
 fetchBaseURL(planetName);
 
 // Klotets färg
@@ -111,5 +134,10 @@ function changeBackgroundColor() {
     }
 }
 changeBackgroundColor()
+
+const button = document.getElementById("returnButton");
+button.addEventListener('click', function() {
+    window.history.back();
+});
 
 export { fetchBaseURL, displayPlanetInfo, searchPlanets, changeBackgroundColor }

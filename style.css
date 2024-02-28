@@ -163,6 +163,23 @@ footer {
 }
 
 /* PLANET PAGE*/
+.planet_header {
+  padding-top: 50px;
+  margin-bottom: -70px;
+}
+
+.returnButton {
+  background-color: #111e66;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 5px;
+  z-index: 99;
+}
+
+.returnButton img {
+  width: 25px;
+}
+
 .stars {
   width: 90%;
   position: absolute;
