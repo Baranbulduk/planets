@@ -5,13 +5,3 @@ displayPlanetInfo();
 searchPlanets();
 changeBackgroundColor();
 
-
-
-/*
-// Change Pages funkar!!
-document.addEventListener("DOMContentLoaded", function () {
-    let earthElement = document.getElementById("earth");
-    if (earthElement) {
-        earthElement.addEventListener("click", earthPage);
-    }
-});*/

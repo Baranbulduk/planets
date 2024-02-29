@@ -4,6 +4,7 @@ const baseURL = "https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies"
 
 let bodies;
 
+
 // Post method Exempel
 /*
 async function fetchData() {
@@ -32,7 +33,7 @@ fetchData();
 */
 
 
-// fetch API
+// API
 async function fetchBaseURL(planetName) {
     try {
         let response = await fetch(baseURL, {
@@ -45,6 +46,7 @@ async function fetchBaseURL(planetName) {
         bodies = data;
         bodies = bodies.bodies;
 
+        // Ändrar det användaren skriver till små bokstäver
         let planetIndex;
         if (planetName) {
             planetIndex = bodies.findIndex(
@@ -63,6 +65,7 @@ async function fetchBaseURL(planetName) {
     }
 }
 
+// Information som visas om varje planet
 function displayPlanetInfo(i) {
     if (i < bodies.length) {
         document.getElementById("planet_heading").innerHTML = bodies[i].name;
@@ -95,6 +98,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Klickbara planeter
+let planets = document.querySelectorAll('section');
+planets.forEach(planet => {
+    planet.addEventListener('click', (event) => {
+        let planetName = event.target.id;
+        window.location.href = `/planet.html?name=${planetName}`;
+    });
+});
+
+// Söker bland planeter som användaren har skrivit in
 function searchPlanets() {
     let search = searchBox.value.toLowerCase();
     for (let i = 0; i < bodies.length; i++) {
@@ -105,12 +118,13 @@ function searchPlanets() {
     }
 }
 
+// Ändrar URL:en på hemsidan beroende på vilken planet man läser om
 let urlParams = new URLSearchParams(window.location.search);
 let planetName = urlParams.get("name");
 
 fetchBaseURL(planetName);
 
-// Klotets färg
+// Klotets färg i varje planetsida
 function changeBackgroundColor() {
     let planet = document.getElementById("planet");
     if (planetName == "solen") {
@@ -135,8 +149,9 @@ function changeBackgroundColor() {
 }
 changeBackgroundColor()
 
+// En tillbaka knapp
 const button = document.getElementById("returnButton");
-button.addEventListener('click', function() {
+button.addEventListener('click', function () {
     window.history.back();
 });
 

@@ -30,7 +30,7 @@ header {
 }
 
 .search-box {
-  padding: 25px 150px 25px 25px;
+  padding: 20px 150px 20px 20px;
   border-radius: 5px 0px 0px 5px;
   background-color: #0e1953;
   color: white;
@@ -39,7 +39,7 @@ header {
 
 .search-button {
   background-color: #ffd029;
-  padding: 22px 30px;
+  padding: 17px 25px;
   border-radius: 0px 5px 5px 0px;
   border: none;
   font-size: 18px;
@@ -78,7 +78,7 @@ content {
   gap: 70px;
 }
 
-.sun {
+.solen {
   height: 740.12px;
   width: 740.12px;
   background-color: #ffd029;
@@ -86,7 +86,7 @@ content {
   box-shadow: 0px 0px 250px 150px #ffd02933;
 }
 
-.mercury {
+.merkurius {
   height: 14px;
   width: 14px;
   background-color: #888888;
@@ -100,7 +100,7 @@ content {
   border-radius: 50%;
 }
 
-.earth {
+.jorden {
   height: 28px;
   width: 28px;
   background-color: #428ed4;
@@ -121,7 +121,7 @@ content {
   border-radius: 50%;
 }
 
-.saturn {
+.saturnus {
   height: 144px;
   width: 144px;
   background-color: #c7aa72;
@@ -131,13 +131,14 @@ content {
   align-items: center;
 }
 
-.saturn_disc {
+.saturnus_disc {
   height: 5.5px;
   width: 218.23px;
   opacity: 50%;
   rotate: 150deg;
   border-radius: 50%;
   background-color: white;
+  
 }
 
 .uranus {
@@ -147,7 +148,7 @@ content {
   border-radius: 50%;
 }
 
-.neptune {
+.neptunus {
   width: 66px;
   height: 66px;
   background-color: #7a91a7;
@@ -170,7 +171,7 @@ footer {
 
 .returnButton {
   background-color: #111e66;
-  padding: 10px 50px;
+  padding: 5px 40px;
   border: none;
   border-radius: 5px;
   z-index: 99;
