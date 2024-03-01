@@ -1,37 +1,6 @@
 const baseURL = "https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies";
 
-// const baseURL = "https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/keys";
-
 let bodies;
-
-
-// Post method Exempel
-/*
-async function fetchData() {
-    try {
-        const response = await fetch('https://api.example.com/data', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${API_KEY}` // Din API-nyckel ska ersätta API_KEY
-            },
-            body: JSON.stringify({
-                // Här kan du lägga till data du vill skicka till servern
-            })
-        });
-
-        console.log(response.status); // Lägg till denna rad
-
-        const data = await response.json();
-        console.log(data);
-        } catch (error) {
-        console.error('Error:', error);
-    }
-}
-
-fetchData();
-*/
-
 
 // API
 async function fetchBaseURL(planetName) {
@@ -46,7 +15,7 @@ async function fetchBaseURL(planetName) {
         bodies = data;
         bodies = bodies.bodies;
 
-        // Ändrar det användaren skriver till små bokstäver
+        // ÄNDRAR DET ANVÄNDAREN SKRIVER TILL SMÅ BOKSTÄVER
         let planetIndex;
         if (planetName) {
             planetIndex = bodies.findIndex(
@@ -55,6 +24,7 @@ async function fetchBaseURL(planetName) {
         }
         displayPlanetInfo(planetIndex);
 
+        // FELHANTERING
     } catch (error) {
         console.error("Error fetching data:", error);
         if (error !== null && error !== undefined) {
@@ -65,7 +35,7 @@ async function fetchBaseURL(planetName) {
     }
 }
 
-// Information som visas om varje planet
+// INFORMATION SOM VISAS OM VARJE PLANET
 function displayPlanetInfo(i) {
     if (i < bodies.length) {
         document.getElementById("planet_heading").innerHTML = bodies[i].name;
@@ -88,7 +58,7 @@ function displayPlanetInfo(i) {
     }
 }
 
-// Sökruta
+// SÖKRUTA
 let searchForm = document.getElementById("search-form");
 let searchBox = document.getElementById("search-box");
 document.addEventListener("DOMContentLoaded", function () {
@@ -98,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Klickbara planeter
+// KLICKABARA PLANETER
 let planets = document.querySelectorAll('section');
 planets.forEach(planet => {
     planet.addEventListener('click', (event) => {
@@ -107,7 +77,7 @@ planets.forEach(planet => {
     });
 });
 
-// Söker bland planeter som användaren har skrivit in
+// SÖKER BLAND PLANETER SOM ANVÄNDAREN HAR SKRIVIT IN
 function searchPlanets() {
     let search = searchBox.value.toLowerCase();
     for (let i = 0; i < bodies.length; i++) {
@@ -118,13 +88,13 @@ function searchPlanets() {
     }
 }
 
-// Ändrar URL:en på hemsidan beroende på vilken planet man läser om
+// ÄNDRAR URL:EN PÅ HEMSIDAN BEROENDE PÅ VILKEN PLANET MAN LÄSER OM
 let urlParams = new URLSearchParams(window.location.search);
 let planetName = urlParams.get("name");
 
 fetchBaseURL(planetName);
 
-// Klotets färg i varje planetsida
+// KLOTETS FÄRG I VARJE PLANETSIDA
 function changeBackgroundColor() {
     let planet = document.getElementById("planet");
     if (planetName == "solen") {
@@ -149,7 +119,7 @@ function changeBackgroundColor() {
 }
 changeBackgroundColor()
 
-// En tillbaka knapp
+// TILLBAKA KNAPP
 const button = document.getElementById("returnButton");
 button.addEventListener('click', function () {
     window.history.back();
