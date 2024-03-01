@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Fjalla+One&family=Inter:wght@900&family=Roboto+Condensed:wght@300;400&family=Secular+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Fjalla+One&family=Inter:wght@900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Condensed:wght@300;400&family=Secular+One&display=swap");
 
-
 * {
   margin: 0;
 }
@@ -106,7 +105,11 @@ aside {
 .merkurius {
   height: 14px;
   width: 14px;
-  background: linear-gradient(90deg, rgba(136,136,136,1) 0%, rgba(47,47,47,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(136, 136, 136, 1) 0%,
+    rgba(47, 47, 47, 1) 100%
+  );
   border-radius: 50%;
 }
 
@@ -119,7 +122,11 @@ aside {
 .venus {
   height: 26px;
   width: 26px;
-  background: linear-gradient(90deg, rgba(231,205,205,1) 0%, rgba(54,48,48,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(231, 205, 205, 1) 0%,
+    rgba(54, 48, 48, 1) 100%
+  );
   border-radius: 50%;
 }
 
@@ -132,7 +139,11 @@ aside {
 .jorden {
   height: 28px;
   width: 28px;
-  background: linear-gradient(90deg, rgba(66,142,212,1) 0%, rgba(20,41,61,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(66, 142, 212, 1) 0%,
+    rgba(20, 41, 61, 1) 100%
+  );
   border-radius: 50%;
 }
 
@@ -145,7 +156,11 @@ aside {
 .mars {
   height: 14px;
   width: 14px;
-  background: linear-gradient(90deg, rgba(239,95,95,1) 0%, rgba(61,25,25,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(239, 95, 95, 1) 0%,
+    rgba(61, 25, 25, 1) 100%
+  );
   border-radius: 50%;
 }
 
@@ -158,7 +173,11 @@ aside {
 .jupiter {
   height: 188px;
   width: 188px;
-  background: linear-gradient(90deg, rgba(226,148,104,1) 0%, rgba(41,27,20,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(226, 148, 104, 1) 0%,
+    rgba(41, 27, 20, 1) 100%
+  );
   border-radius: 50%;
 }
 
@@ -171,7 +190,11 @@ aside {
 .saturnus {
   height: 144px;
   width: 144px;
-  background: linear-gradient(90deg, rgba(199,170,114,1) 0%, rgba(57,49,34,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(199, 170, 114, 1) 0%,
+    rgba(57, 49, 34, 1) 100%
+  );
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -196,7 +219,11 @@ aside {
 .uranus {
   height: 86px;
   width: 86px;
-  background: linear-gradient(90deg, rgba(201,212,241,1) 0%, rgba(52,54,61,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(201, 212, 241, 1) 0%,
+    rgba(52, 54, 61, 1) 100%
+  );
   border-radius: 50%;
 }
 
@@ -209,7 +236,11 @@ aside {
 .neptunus {
   width: 86px;
   height: 86px;
-  background: linear-gradient(90deg, rgba(122,145,167,1) 0%, rgba(39,46,52,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(122, 145, 167, 1) 0%,
+    rgba(39, 46, 52, 1) 100%
+  );
   border-radius: 50%;
 }
 

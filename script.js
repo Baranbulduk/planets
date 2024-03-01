@@ -94,6 +94,12 @@ let planetName = urlParams.get("name");
 
 fetchBaseURL(planetName);
 
+// TILLBAKA KNAPP
+const button = document.getElementById("returnButton");
+button.addEventListener('click', function () {
+    window.history.back();
+});
+
 // KLOTETS FÄRG I VARJE PLANETSIDA
 function changeBackgroundColor() {
     let planet = document.getElementById("planet");
@@ -118,10 +124,3 @@ function changeBackgroundColor() {
     }
 }
 changeBackgroundColor()
-
-// TILLBAKA KNAPP
-const button = document.getElementById("returnButton");
-button.addEventListener('click', function () {
-    window.history.back();
-});
-
