@@ -48,6 +48,7 @@ header {
   font-size: 18px;
   font-weight: bold;
   color: #0e1953;
+  cursor: pointer;
 }
 
 .search-button:hover {
@@ -96,49 +97,91 @@ aside {
   box-shadow: 0px 0px 250px 150px #ffd02933;
 }
 
+.solen:hover {
+  height: 760px;
+  width: 760px;
+  cursor: pointer;
+}
+
 .merkurius {
   height: 14px;
   width: 14px;
-  background-color: #888888;
+  background: linear-gradient(90deg, rgba(136,136,136,1) 0%, rgba(47,47,47,1) 100%);
   border-radius: 50%;
+}
+
+.merkurius:hover {
+  height: 34px;
+  width: 34px;
+  cursor: pointer;
 }
 
 .venus {
   height: 26px;
   width: 26px;
-  background-color: #e7cdcd;
+  background: linear-gradient(90deg, rgba(231,205,205,1) 0%, rgba(54,48,48,1) 100%);
   border-radius: 50%;
+}
+
+.venus:hover {
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
 }
 
 .jorden {
   height: 28px;
   width: 28px;
-  background-color: #428ed4;
+  background: linear-gradient(90deg, rgba(66,142,212,1) 0%, rgba(20,41,61,1) 100%);
   border-radius: 50%;
+}
+
+.jorden:hover {
+  height: 48px;
+  width: 48px;
+  cursor: pointer;
 }
 
 .mars {
   height: 14px;
   width: 14px;
-  background-color: #ef5f5f;
+  background: linear-gradient(90deg, rgba(239,95,95,1) 0%, rgba(61,25,25,1) 100%);
   border-radius: 50%;
+}
+
+.mars:hover {
+  height: 34px;
+  width: 34px;
+  cursor: pointer;
 }
 
 .jupiter {
   height: 188px;
   width: 188px;
-  background-color: #e29468;
+  background: linear-gradient(90deg, rgba(226,148,104,1) 0%, rgba(41,27,20,1) 100%);
   border-radius: 50%;
+}
+
+.jupiter:hover {
+  height: 208px;
+  width: 208px;
+  cursor: pointer;
 }
 
 .saturnus {
   height: 144px;
   width: 144px;
-  background-color: #c7aa72;
+  background: linear-gradient(90deg, rgba(199,170,114,1) 0%, rgba(57,49,34,1) 100%);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.saturnus:hover {
+  height: 164px;
+  width: 164px;
+  cursor: pointer;
 }
 
 .saturnus_disc {
@@ -151,17 +194,29 @@ aside {
 }
 
 .uranus {
-  height: 66px;
-  width: 66px;
-  background-color: #c9d4f1;
+  height: 86px;
+  width: 86px;
+  background: linear-gradient(90deg, rgba(201,212,241,1) 0%, rgba(52,54,61,1) 100%);
   border-radius: 50%;
 }
 
+.uranus:hover {
+  height: 66px;
+  width: 66px;
+  cursor: pointer;
+}
+
 .neptunus {
+  width: 86px;
+  height: 86px;
+  background: linear-gradient(90deg, rgba(122,145,167,1) 0%, rgba(39,46,52,1) 100%);
+  border-radius: 50%;
+}
+
+.neptunus:hover {
   width: 66px;
   height: 66px;
-  background-color: #7a91a7;
-  border-radius: 50%;
+  cursor: pointer;
 }
 
 /* Zo-com logga */
@@ -186,6 +241,7 @@ footer {
   border: none;
   border-radius: 5px;
   z-index: 99;
+  cursor: pointer;
 }
 
 .returnButton:hover {
@@ -223,17 +279,21 @@ footer {
 }
 
 .planet_description {
-  margin: 40px 0;
+  margin-top: 30px;
 }
 
 .planet-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 200px;
-  padding: 40px 0;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-  margin-bottom: 40px;
+  gap: 30px;
+}
+
+.line-divider {
+  background-color: white;
+  opacity: 20%;
+  height: 1px;
+  width: 100%;
+  margin: 30px 0;
 }
 
 /* UNDERRUBRIKER */
